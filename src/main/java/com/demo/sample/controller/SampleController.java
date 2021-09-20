@@ -44,7 +44,7 @@ public class SampleController {
 	
 	@GetMapping("/employees/{id}/pending")
 	public Integer getEmployeesPendingCount(@PathVariable Integer id) {
-		return employeeService.getEmployees(id).getPendingCount();
+		return employeeService.getEmployees(id).getPending_count();
 		
 	}
 }
